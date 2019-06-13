@@ -1,8 +1,8 @@
 import logging
+logging.basicConfig(level=logging.WARNING)
 import os
 import pickle
-
-logging.basicConfig(level=logging.WARNING)
+import time
 
 import argparse
 
@@ -19,7 +19,7 @@ parser.add_argument('--n_workers', type=int,   help='Number of workers to run in
 parser.add_argument('--worker', help='Flag to turn this into a worker process', action='store_true')
 parser.add_argument('--run_id', type=str, help='A unique run id for this optimization run. An easy option is to use the job id of the clusters scheduler.')
 parser.add_argument('--nic_name',type=str, help='Which network interface to use for communication.')
-parser.add_argument('--shared_directory',type=str, help='A directory that is accessible for all processes, e.g. a NFS share.', default='./result')
+parser.add_argument('--shared_directory',type=str, help='A directory that is accessible for all processes, e.g. a NFS share.', default='/home/lchen/parameters/result')
 
 args=parser.parse_args()
 
@@ -27,14 +27,14 @@ host = hpns.nic_name_to_host(args.nic_name)
 
 
 if args.worker:
-    import time
+
     time.sleep(5)   # short artificial delay to make sure the nameserver is already running
     w = worker(sleep_interval = 0.5,run_id=args.run_id, host=host)
     w.load_nameserver_credentials(working_directory=args.shared_directory)
     w.run(background=False)
     exit(0)
 
-#result_logger = hpres.json_result_logger(directory=args.shared_directory, overwrite=True)
+result_logger = hpres.json_result_logger(directory=args.shared_directory, overwrite=True)
 
 
 # Step 1: Start a nameserver

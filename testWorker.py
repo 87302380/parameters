@@ -1,4 +1,5 @@
 import lightgbm as lgb
+import time
 
 from hpbandster.core.worker import Worker
 import ConfigSpace as CS
@@ -8,8 +9,10 @@ import data_preparation_breast_cancer as to_be_deleted
 from sklearn.datasets import load_breast_cancer
 
 class testWorker(Worker):
-    def __init__(self,  **kwargs):
+    def __init__(self,  sleep_interval = 0, **kwargs):
         super().__init__(**kwargs)
+        
+        self.sleep_interval = sleep_interval
 
         data = load_breast_cancer()
 
@@ -59,7 +62,8 @@ class testWorker(Worker):
                )
 
         best_score = cv_result['binary_error-mean'][-1]
-
+        
+        time.sleep(self.sleep_interval)
 
         return ({
             'loss': float(best_score), # this is the a mandatory field to run hyperband
