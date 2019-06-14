@@ -7,6 +7,7 @@ import time
 import argparse
 
 import hpbandster.core.nameserver as hpns
+import hpbandster.core.result as hpres
 
 from hpbandster.optimizers import BOHB as BOHB
 from testWorker import testWorker as worker
