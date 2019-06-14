@@ -10,7 +10,7 @@ import hpbandster.core.nameserver as hpns
 import hpbandster.core.result as hpres
 
 from hpbandster.optimizers import BOHB as BOHB
-from testWorker import testWorker as worker
+from LightGBMWorker import LightGBMWorker as worker
 
 parser = argparse.ArgumentParser(description='Example 1 - sequential and local execution.')
 parser.add_argument('--min_budget',   type=float, help='Minimum budget used during the optimization.',    default=9)
@@ -63,6 +63,7 @@ bohb = BOHB(  configspace = worker.get_configspace(),
               host=host,
               nameserver=ns_host,
               nameserver_port=ns_port,
+              result_logger=result_logger,
               min_budget=args.min_budget, max_budget=args.max_budget
            )
 
