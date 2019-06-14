@@ -19,7 +19,7 @@ parser.add_argument('--n_iterations', type=int,   help='Number of iterations per
 parser.add_argument('--n_workers', type=int,   help='Number of workers to run in parallel.', default=2)
 parser.add_argument('--worker', help='Flag to turn this into a worker process', action='store_true')
 parser.add_argument('--run_id', type=str, help='A unique run id for this optimization run. An easy option is to use the job id of the clusters scheduler.')
-parser.add_argument('--nic_name',type=str, help='Which network interface to use for communication.')
+parser.add_argument('--nic_name',type=str, help='Which network interface to use for communication.', default= 'lo')
 parser.add_argument('--shared_directory',type=str, help='A directory that is accessible for all processes, e.g. a NFS share.', default='/home/lchen/parameters/result')
 
 args=parser.parse_args()
@@ -66,7 +66,7 @@ bohb = BOHB(  configspace = worker.get_configspace(),
               min_budget=args.min_budget, max_budget=args.max_budget
            )
 
-res = bohb.run(n_iterations=args.n_iterations, min_n_workers=args.n_workers)
+res = bohb.run(n_iterations=args.n_iterations)
 
 with open(os.path.join(args.shared_directory, 'results.pkl'), 'wb') as fh:
     pickle.dump(res, fh)

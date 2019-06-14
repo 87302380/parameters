@@ -5,9 +5,4 @@
 
 # enter the virtual environment
 source /home/lchen/parameters/parameter/bin/activate
-
-if [ $SGE_TASK_ID -eq 1]
-   then python3 /home/lchen/parameters/search_parameter.py --run_id $JOB_ID --nic_name lo 
-else
-   python3 /home/lchen/parameters/search_parameter.py --run_id $JOB_ID --nic_name lo --worker
-fi
+python3 /home/lchen/parameters/search_parameter.py --run_id $JOB_ID --nic_name lo 
