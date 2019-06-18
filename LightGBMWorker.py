@@ -1,12 +1,12 @@
 # from sklearn.datasets import load_breast_cancer
 # from sklearn.model_selection import train_test_split
 # from sklearn.metrics import f1_score
-# import lightgbm as lgb
+import lightgbm as lgb
 # import numpy as np
-
 # import data_preparation_bacmen_vs_viral as to_be_deleted
 # import data_preparation_arificial_data as to_be_deleted
 import data_preparation_breast_cancer as to_be_deleted
+import test_hyperparameteroptimization as test
 from hpbandster.core.worker import Worker
 import ConfigSpace as CS
 
@@ -15,12 +15,6 @@ from regression_classifier import get_accuracy
 class LightGBMWorker(Worker):
     def __init__(self,  **kwargs):
         super().__init__(**kwargs)
-
-        # Load data here
-        data = to_be_deleted.get_data_with_label_included()
-        self.train_loader = data
-        # self.test_loader = lgb.Dataset(x_test, label=y_test)
-
 
     def compute(self, config, budget, *args, **kwargs):
         max_depth = int(config['max_depth'])
@@ -37,7 +31,7 @@ class LightGBMWorker(Worker):
 
         parameters = {
             'boosting_type': 'gbdt',
-            'objective': 'regression',
+            'objective': 'regression_l2',
             'learning_rate': 0.1,
             'num_leaves': num_leaves,
             'max_depth': max_depth,
@@ -53,12 +47,11 @@ class LightGBMWorker(Worker):
             'min_gain_to_split': min_gain_to_split
         }
 
-        accuracy = get_accuracy(self.train_loader, parameters, 15)
-        1-accuracy/100
+        best_score = test.zielFunction(parameters)
 
         return ({
-            'loss': float(1-accuracy/100),  # this is the a mandatory field to run hyperband
-            # 'info': f1_score  # can be used for any user-defined information - also mandatory
+            'loss': float(best_score), # this is the a mandatory field to run hyperband
+            'info': float(best_score)  # can be used for any user-defined information - also mandatory
         })
 
     @staticmethod
