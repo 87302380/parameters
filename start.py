@@ -32,6 +32,7 @@ if args.worker:
     import time
     time.sleep(5)   # short artificial delay to make sure the nameserver is already running
     w = worker
+
    # w.load_nameserver_credentials(working_directory=args.shared_directory)
     w.run(background=False)
     exit(0)
