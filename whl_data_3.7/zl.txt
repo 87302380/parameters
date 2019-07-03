@@ -1,1 +1,2 @@
+docker exec -i -t c4d /bin/bash
 python3 setup.py sdist bdist_wheel
