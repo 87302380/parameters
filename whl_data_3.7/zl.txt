@@ -1,4 +1,5 @@
 docker pull python
 docker run -dit python
 docker exec -i -t 123 /bin/bash
+git clone https://github.com/87302380/parameters.git
 python3 setup.py sdist bdist_wheel
