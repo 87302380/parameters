@@ -1,0 +1,288 @@
+{
+  "data": [
+    [
+      [
+        1,
+        null,
+        0
+      ],
+      [
+        0.007072276312194203,
+        0.3612494468688965,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.007072276312194203,
+          "timestamps": {
+            "submitted": 11.019587993621826,
+            "started": 11.019587993621826,
+            "finished": 11.380837440490723
+          }
+        }
+      ]
+    ],
+    [
+      [
+        2,
+        null,
+        0
+      ],
+      [
+        0.00733635083906492,
+        0.3362314701080322,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.00733635083906492,
+          "timestamps": {
+            "submitted": 16.487557411193848,
+            "started": 16.487557411193848,
+            "finished": 16.82378888130188
+          }
+        }
+      ]
+    ],
+    [
+      [
+        3,
+        null,
+        0
+      ],
+      [
+        0.00915038095958065,
+        0.2533121109008789,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.00915038095958065,
+          "timestamps": {
+            "submitted": 19.398269414901733,
+            "started": 19.398269414901733,
+            "finished": 19.651581525802612
+          }
+        }
+      ]
+    ],
+    [
+      [
+        4,
+        null,
+        0
+      ],
+      [
+        0.008005435053947352,
+        0.2818868160247803,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.008005435053947352,
+          "timestamps": {
+            "submitted": 19.654584169387817,
+            "started": 19.654584169387817,
+            "finished": 19.936470985412598
+          }
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        null,
+        0
+      ],
+      [
+        0.010416192820544845,
+        0.25713133811950684,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.010416192820544845,
+          "timestamps": {
+            "submitted": 20.107815504074097,
+            "started": 20.107815504074097,
+            "finished": 20.364946842193604
+          }
+        }
+      ]
+    ],
+    [
+      [
+        6,
+        null,
+        0
+      ],
+      [
+        0.01687594786482749,
+        0.21203351020812988,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.01687594786482749,
+          "timestamps": {
+            "submitted": 20.511942386627197,
+            "started": 20.511942386627197,
+            "finished": 20.723975896835327
+          }
+        }
+      ]
+    ],
+    [
+      [
+        7,
+        null,
+        0
+      ],
+      [
+        0.010364268750386985,
+        0.2944300174713135,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.010364268750386985,
+          "timestamps": {
+            "submitted": 20.873422861099243,
+            "started": 20.873422861099243,
+            "finished": 21.167852878570557
+          }
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        null,
+        0
+      ],
+      [
+        0.014832902644248969,
+        0.33410048484802246,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.014832902644248969,
+          "timestamps": {
+            "submitted": 21.174858808517456,
+            "started": 21.174858808517456,
+            "finished": 21.50895929336548
+          }
+        }
+      ]
+    ]
+  ],
+  "config_origins": {
+    "1": "Random",
+    "2": "Random",
+    "3": "Random",
+    "4": "Random",
+    "5": "Model based pick",
+    "6": "Model based pick",
+    "7": "Model based pick",
+    "8": "Random"
+  },
+  "configs": {
+    "1": {
+      "bagging_fraction": 0.681699250740779,
+      "bagging_freq": 4,
+      "feature_fraction": 0.6776155494024134,
+      "lambda_l1": 0.3827811844796578,
+      "lambda_l2": 0.5834950575794121,
+      "max_bin": 47,
+      "max_depth": 7,
+      "min_data_in_leaf": 8,
+      "min_gain_to_split": 0.31429979846811895,
+      "num_leaves": 33
+    },
+    "2": {
+      "bagging_fraction": 0.733114570860036,
+      "bagging_freq": 22,
+      "feature_fraction": 0.3107932664820686,
+      "lambda_l1": 0.12726551515713536,
+      "lambda_l2": 0.06874330680758156,
+      "max_bin": 10,
+      "max_depth": 8,
+      "min_data_in_leaf": 7,
+      "min_gain_to_split": 0.06700186538542086,
+      "num_leaves": 40
+    },
+    "3": {
+      "bagging_fraction": 0.47028217101791325,
+      "bagging_freq": 1,
+      "feature_fraction": 0.5496746832089243,
+      "lambda_l1": 0.28793851724123787,
+      "lambda_l2": 0.7679624995200937,
+      "max_bin": 43,
+      "max_depth": 7,
+      "min_data_in_leaf": 8,
+      "min_gain_to_split": 0.3816306456370563,
+      "num_leaves": 8
+    },
+    "4": {
+      "bagging_fraction": 0.7731228389751471,
+      "bagging_freq": 2,
+      "feature_fraction": 0.5932136793457866,
+      "lambda_l1": 0.2977950257756704,
+      "lambda_l2": 0.20856311750950618,
+      "max_bin": 28,
+      "max_depth": 5,
+      "min_data_in_leaf": 7,
+      "min_gain_to_split": 0.12341770424206167,
+      "num_leaves": 23
+    },
+    "5": {
+      "bagging_fraction": 0.7152268324372791,
+      "bagging_freq": 2,
+      "feature_fraction": 0.5517726570740382,
+      "lambda_l1": 0.6201139910469037,
+      "lambda_l2": 0.9079576089849439,
+      "max_bin": 45,
+      "max_depth": 8,
+      "min_data_in_leaf": 4,
+      "min_gain_to_split": 0.6171183410023688,
+      "num_leaves": 48
+    },
+    "6": {
+      "bagging_fraction": 0.43464819883935985,
+      "bagging_freq": 28,
+      "feature_fraction": 0.4803936599217844,
+      "lambda_l1": 0.03509715660047508,
+      "lambda_l2": 0.5142181035348466,
+      "max_bin": 11,
+      "max_depth": 3,
+      "min_data_in_leaf": 6,
+      "min_gain_to_split": 0.9765116775642433,
+      "num_leaves": 14
+    },
+    "7": {
+      "bagging_fraction": 0.6327955446871839,
+      "bagging_freq": 15,
+      "feature_fraction": 0.6556441952385947,
+      "lambda_l1": 0.28075905752029207,
+      "lambda_l2": 0.754700435564392,
+      "max_bin": 44,
+      "max_depth": 7,
+      "min_data_in_leaf": 3,
+      "min_gain_to_split": 0.29989940537512594,
+      "num_leaves": 44
+    },
+    "8": {
+      "bagging_fraction": 0.6906848494144348,
+      "bagging_freq": 43,
+      "feature_fraction": 0.894618749093078,
+      "lambda_l1": 0.6868249215382805,
+      "lambda_l2": 0.09588679363492947,
+      "max_bin": 45,
+      "max_depth": 4,
+      "min_data_in_leaf": 1,
+      "min_gain_to_split": 0.21919357002808382,
+      "num_leaves": 36
+    }
+  }
+}

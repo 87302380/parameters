@@ -1,0 +1,88 @@
+{
+  "hyperparameters": [
+    {
+      "name": "bagging_fraction",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.0,
+      "upper": 1.0,
+      "default": 0.5
+    },
+    {
+      "name": "bagging_freq",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 0,
+      "upper": 50,
+      "default": 25
+    },
+    {
+      "name": "feature_fraction",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.0,
+      "upper": 1.0,
+      "default": 0.5
+    },
+    {
+      "name": "lambda_l1",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.0,
+      "upper": 1.0,
+      "default": 0.5
+    },
+    {
+      "name": "lambda_l2",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.0,
+      "upper": 1.0,
+      "default": 0.5
+    },
+    {
+      "name": "max_bin",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 3,
+      "upper": 50,
+      "default": 26
+    },
+    {
+      "name": "max_depth",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 3,
+      "upper": 8,
+      "default": 6
+    },
+    {
+      "name": "min_data_in_leaf",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 1,
+      "upper": 8,
+      "default": 4
+    },
+    {
+      "name": "min_gain_to_split",
+      "type": "uniform_float",
+      "log": false,
+      "lower": 0.0,
+      "upper": 1.0,
+      "default": 0.5
+    },
+    {
+      "name": "num_leaves",
+      "type": "uniform_int",
+      "log": false,
+      "lower": 3,
+      "upper": 50,
+      "default": 26
+    }
+  ],
+  "conditions": [],
+  "forbiddens": [],
+  "python_module_version": "0.4.10",
+  "json_format_version": 0.1
+}

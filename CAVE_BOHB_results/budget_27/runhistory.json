@@ -1,0 +1,638 @@
+{
+  "data": [
+    [
+      [
+        1,
+        null,
+        0
+      ],
+      [
+        0.007072276312194203,
+        0.2861976623535156,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.007072276312194203,
+          "timestamps": {
+            "submitted": 7.472144842147827,
+            "started": 7.472144842147827,
+            "finished": 7.758342504501343
+          }
+        }
+      ]
+    ],
+    [
+      [
+        2,
+        null,
+        0
+      ],
+      [
+        0.008245232910147893,
+        0.3122141361236572,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.008245232910147893,
+          "timestamps": {
+            "submitted": 7.7603440284729,
+            "started": 7.7603440284729,
+            "finished": 8.072558164596558
+          }
+        }
+      ]
+    ],
+    [
+      [
+        3,
+        null,
+        0
+      ],
+      [
+        0.00866212485440876,
+        0.2271559238433838,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.00866212485440876,
+          "timestamps": {
+            "submitted": 8.075560808181763,
+            "started": 8.075560808181763,
+            "finished": 8.302716732025146
+          }
+        }
+      ]
+    ],
+    [
+      [
+        4,
+        null,
+        0
+      ],
+      [
+        0.00832476348313771,
+        0.2681844234466553,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.00832476348313771,
+          "timestamps": {
+            "submitted": 8.304718017578125,
+            "started": 8.304718017578125,
+            "finished": 8.57290244102478
+          }
+        }
+      ]
+    ],
+    [
+      [
+        5,
+        null,
+        0
+      ],
+      [
+        0.009653945603015246,
+        0.32322216033935547,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.009653945603015246,
+          "timestamps": {
+            "submitted": 8.575905799865723,
+            "started": 8.575905799865723,
+            "finished": 8.899127960205078
+          }
+        }
+      ]
+    ],
+    [
+      [
+        6,
+        null,
+        0
+      ],
+      [
+        0.008389331805400801,
+        0.2982053756713867,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.008389331805400801,
+          "timestamps": {
+            "submitted": 8.902129650115967,
+            "started": 8.902129650115967,
+            "finished": 9.200335025787354
+          }
+        }
+      ]
+    ],
+    [
+      [
+        7,
+        null,
+        0
+      ],
+      [
+        0.008596603806756087,
+        0.21614933013916016,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.008596603806756087,
+          "timestamps": {
+            "submitted": 9.203336954116821,
+            "started": 9.203336954116821,
+            "finished": 9.419486284255981
+          }
+        }
+      ]
+    ],
+    [
+      [
+        8,
+        null,
+        0
+      ],
+      [
+        0.009170779557908348,
+        0.3032078742980957,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.009170779557908348,
+          "timestamps": {
+            "submitted": 9.422489166259766,
+            "started": 9.422489166259766,
+            "finished": 9.725697040557861
+          }
+        }
+      ]
+    ],
+    [
+      [
+        9,
+        null,
+        0
+      ],
+      [
+        0.009149082048977797,
+        0.37625956535339355,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.009149082048977797,
+          "timestamps": {
+            "submitted": 9.72769832611084,
+            "started": 9.728698968887329,
+            "finished": 10.104958534240723
+          }
+        }
+      ]
+    ],
+    [
+      [
+        10,
+        null,
+        0
+      ],
+      [
+        0.00733635083906492,
+        0.5333662033081055,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.00733635083906492,
+          "timestamps": {
+            "submitted": 11.386842966079712,
+            "started": 11.386842966079712,
+            "finished": 11.920209169387817
+          }
+        }
+      ]
+    ],
+    [
+      [
+        11,
+        null,
+        0
+      ],
+      [
+        0.007888656449679843,
+        0.3442368507385254,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.007888656449679843,
+          "timestamps": {
+            "submitted": 12.09132719039917,
+            "started": 12.09232759475708,
+            "finished": 12.436564445495605
+          }
+        }
+      ]
+    ],
+    [
+      [
+        12,
+        null,
+        0
+      ],
+      [
+        0.010447214591313148,
+        0.44330692291259766,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.010447214591313148,
+          "timestamps": {
+            "submitted": 12.656716585159302,
+            "started": 12.656716585159302,
+            "finished": 13.1000235080719
+          }
+        }
+      ]
+    ],
+    [
+      [
+        13,
+        null,
+        0
+      ],
+      [
+        0.01075038382182536,
+        0.3783853054046631,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.01075038382182536,
+          "timestamps": {
+            "submitted": 13.29015326499939,
+            "started": 13.29015326499939,
+            "finished": 13.668538570404053
+          }
+        }
+      ]
+    ],
+    [
+      [
+        14,
+        null,
+        0
+      ],
+      [
+        0.008941170529131126,
+        0.35213160514831543,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.008941170529131126,
+          "timestamps": {
+            "submitted": 13.845689058303833,
+            "started": 13.845689058303833,
+            "finished": 14.197820663452148
+          }
+        }
+      ]
+    ],
+    [
+      [
+        15,
+        null,
+        0
+      ],
+      [
+        0.008328567927126329,
+        0.2256014347076416,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.008328567927126329,
+          "timestamps": {
+            "submitted": 14.204825162887573,
+            "started": 14.205826044082642,
+            "finished": 14.431427478790283
+          }
+        }
+      ]
+    ],
+    [
+      [
+        16,
+        null,
+        0
+      ],
+      [
+        0.008776943816715788,
+        0.32476305961608887,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.008776943816715788,
+          "timestamps": {
+            "submitted": 14.596544027328491,
+            "started": 14.596544027328491,
+            "finished": 14.92130708694458
+          }
+        }
+      ]
+    ],
+    [
+      [
+        17,
+        null,
+        0
+      ],
+      [
+        0.008635303260006166,
+        0.3294198513031006,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.008635303260006166,
+          "timestamps": {
+            "submitted": 15.082023620605469,
+            "started": 15.082023620605469,
+            "finished": 15.41144347190857
+          }
+        }
+      ]
+    ],
+    [
+      [
+        18,
+        null,
+        0
+      ],
+      [
+        0.011714814801877083,
+        0.21561980247497559,
+        {
+          "__enum__": "StatusType.SUCCESS"
+        },
+        {
+          "info": 0.011714814801877083,
+          "timestamps": {
+            "submitted": 15.41144347190857,
+            "started": 15.41144347190857,
+            "finished": 15.627063274383545
+          }
+        }
+      ]
+    ]
+  ],
+  "config_origins": {
+    "1": "Random",
+    "2": "Random",
+    "3": "Random",
+    "4": "Random",
+    "5": "Random",
+    "6": "Random",
+    "7": "Model based pick",
+    "8": "Model based pick",
+    "9": "Model based pick",
+    "10": "Random",
+    "11": "Model based pick",
+    "12": "Model based pick",
+    "13": "Model based pick",
+    "14": "Model based pick",
+    "15": "Random",
+    "16": "Model based pick",
+    "17": "Model based pick",
+    "18": "Random"
+  },
+  "configs": {
+    "1": {
+      "bagging_fraction": 0.681699250740779,
+      "bagging_freq": 4,
+      "feature_fraction": 0.6776155494024134,
+      "lambda_l1": 0.3827811844796578,
+      "lambda_l2": 0.5834950575794121,
+      "max_bin": 47,
+      "max_depth": 7,
+      "min_data_in_leaf": 8,
+      "min_gain_to_split": 0.31429979846811895,
+      "num_leaves": 33
+    },
+    "2": {
+      "bagging_fraction": 0.5221964576678133,
+      "bagging_freq": 32,
+      "feature_fraction": 0.4323693493328302,
+      "lambda_l1": 0.08234306849742157,
+      "lambda_l2": 0.21855541328389638,
+      "max_bin": 42,
+      "max_depth": 5,
+      "min_data_in_leaf": 6,
+      "min_gain_to_split": 0.043721157163645885,
+      "num_leaves": 30
+    },
+    "3": {
+      "bagging_fraction": 0.5561303049668702,
+      "bagging_freq": 2,
+      "feature_fraction": 0.46770498269206484,
+      "lambda_l1": 0.034838973635962334,
+      "lambda_l2": 0.3589195480701556,
+      "max_bin": 13,
+      "max_depth": 3,
+      "min_data_in_leaf": 5,
+      "min_gain_to_split": 0.862093072441366,
+      "num_leaves": 8
+    },
+    "4": {
+      "bagging_fraction": 0.3157693873848698,
+      "bagging_freq": 6,
+      "feature_fraction": 0.3698716426995836,
+      "lambda_l1": 0.23358351192622295,
+      "lambda_l2": 0.8453179928918076,
+      "max_bin": 13,
+      "max_depth": 5,
+      "min_data_in_leaf": 5,
+      "min_gain_to_split": 0.15343580807149304,
+      "num_leaves": 32
+    },
+    "5": {
+      "bagging_fraction": 0.7276550330946796,
+      "bagging_freq": 23,
+      "feature_fraction": 0.8152089217674414,
+      "lambda_l1": 0.3702265546411513,
+      "lambda_l2": 0.566411614477072,
+      "max_bin": 35,
+      "max_depth": 5,
+      "min_data_in_leaf": 3,
+      "min_gain_to_split": 0.2233506091900207,
+      "num_leaves": 30
+    },
+    "6": {
+      "bagging_fraction": 0.9561857401338372,
+      "bagging_freq": 42,
+      "feature_fraction": 0.5472659392968982,
+      "lambda_l1": 0.7772583339374638,
+      "lambda_l2": 0.18060078203700425,
+      "max_bin": 44,
+      "max_depth": 6,
+      "min_data_in_leaf": 6,
+      "min_gain_to_split": 0.04751449031963739,
+      "num_leaves": 28
+    },
+    "7": {
+      "bagging_fraction": 0.997679640657934,
+      "bagging_freq": 49,
+      "feature_fraction": 0.2981714172013465,
+      "lambda_l1": 0.9902927460837132,
+      "lambda_l2": 0.25325956280213147,
+      "max_bin": 48,
+      "max_depth": 5,
+      "min_data_in_leaf": 7,
+      "min_gain_to_split": 0.34831928449719846,
+      "num_leaves": 8
+    },
+    "8": {
+      "bagging_fraction": 0.538144518583711,
+      "bagging_freq": 28,
+      "feature_fraction": 0.4098081532856697,
+      "lambda_l1": 0.15005055635746467,
+      "lambda_l2": 0.8926662414543389,
+      "max_bin": 48,
+      "max_depth": 8,
+      "min_data_in_leaf": 8,
+      "min_gain_to_split": 0.03199592276073443,
+      "num_leaves": 23
+    },
+    "9": {
+      "bagging_fraction": 0.6756751989519653,
+      "bagging_freq": 23,
+      "feature_fraction": 0.7890066203906467,
+      "lambda_l1": 0.46431003178099994,
+      "lambda_l2": 0.47608058729226016,
+      "max_bin": 29,
+      "max_depth": 5,
+      "min_data_in_leaf": 5,
+      "min_gain_to_split": 0.025835260680906247,
+      "num_leaves": 28
+    },
+    "10": {
+      "bagging_fraction": 0.733114570860036,
+      "bagging_freq": 22,
+      "feature_fraction": 0.3107932664820686,
+      "lambda_l1": 0.12726551515713536,
+      "lambda_l2": 0.06874330680758156,
+      "max_bin": 10,
+      "max_depth": 8,
+      "min_data_in_leaf": 7,
+      "min_gain_to_split": 0.06700186538542086,
+      "num_leaves": 40
+    },
+    "11": {
+      "bagging_fraction": 0.8607918943030478,
+      "bagging_freq": 9,
+      "feature_fraction": 0.6097704228623255,
+      "lambda_l1": 0.032976685208473605,
+      "lambda_l2": 0.5381854094403611,
+      "max_bin": 21,
+      "max_depth": 3,
+      "min_data_in_leaf": 3,
+      "min_gain_to_split": 0.18077806025843804,
+      "num_leaves": 35
+    },
+    "12": {
+      "bagging_fraction": 0.49935170802007667,
+      "bagging_freq": 5,
+      "feature_fraction": 0.8101492565943538,
+      "lambda_l1": 0.028048134634849883,
+      "lambda_l2": 0.8799040330858788,
+      "max_bin": 50,
+      "max_depth": 4,
+      "min_data_in_leaf": 4,
+      "min_gain_to_split": 0.03645554018859477,
+      "num_leaves": 25
+    },
+    "13": {
+      "bagging_fraction": 0.5440524342635368,
+      "bagging_freq": 21,
+      "feature_fraction": 0.8629890815126124,
+      "lambda_l1": 0.08740718025485344,
+      "lambda_l2": 0.36741810132398756,
+      "max_bin": 27,
+      "max_depth": 3,
+      "min_data_in_leaf": 5,
+      "min_gain_to_split": 0.09893211537391393,
+      "num_leaves": 16
+    },
+    "14": {
+      "bagging_fraction": 0.8310139314190925,
+      "bagging_freq": 1,
+      "feature_fraction": 0.5785806288947466,
+      "lambda_l1": 0.215327872893383,
+      "lambda_l2": 0.9136214576776642,
+      "max_bin": 46,
+      "max_depth": 6,
+      "min_data_in_leaf": 7,
+      "min_gain_to_split": 0.22667556417524842,
+      "num_leaves": 34
+    },
+    "15": {
+      "bagging_fraction": 0.8331729623794852,
+      "bagging_freq": 8,
+      "feature_fraction": 0.22809062959985882,
+      "lambda_l1": 0.3178923927059837,
+      "lambda_l2": 0.6917012987160862,
+      "max_bin": 46,
+      "max_depth": 4,
+      "min_data_in_leaf": 7,
+      "min_gain_to_split": 0.46685488416630416,
+      "num_leaves": 10
+    },
+    "16": {
+      "bagging_fraction": 0.7924246194433027,
+      "bagging_freq": 9,
+      "feature_fraction": 0.786738104626304,
+      "lambda_l1": 0.331419309181243,
+      "lambda_l2": 0.44411575801664716,
+      "max_bin": 24,
+      "max_depth": 4,
+      "min_data_in_leaf": 3,
+      "min_gain_to_split": 0.1176042278388264,
+      "num_leaves": 36
+    },
+    "17": {
+      "bagging_fraction": 0.7862361758169026,
+      "bagging_freq": 19,
+      "feature_fraction": 0.844158591204782,
+      "lambda_l1": 0.09908870549886784,
+      "lambda_l2": 0.7728975592897525,
+      "max_bin": 45,
+      "max_depth": 5,
+      "min_data_in_leaf": 5,
+      "min_gain_to_split": 0.21781191243079775,
+      "num_leaves": 8
+    },
+    "18": {
+      "bagging_fraction": 0.34369818358390636,
+      "bagging_freq": 4,
+      "feature_fraction": 0.3605819165751638,
+      "lambda_l1": 0.10059044504873504,
+      "lambda_l2": 0.8488386169125418,
+      "max_bin": 11,
+      "max_depth": 7,
+      "min_data_in_leaf": 8,
+      "min_gain_to_split": 0.7576337363831843,
+      "num_leaves": 32
+    }
+  }
+}
