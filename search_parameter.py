@@ -70,11 +70,8 @@ def get_parameters(data, target_feature_index):
 
 	res = bohb.run(n_iterations=args.n_iterations)
 
-	with open(os.path.join(args.shared_directory, 'results.pkl'), 'wb') as fh:
-		pickle.dump(res, fh)
-
-	# Step 4: Shutdown
-	# After the optimizer run, we must shutdown the master and the nameserver.
+	bohb.shutdown(shutdown_workers=True)
+	NS.shutdown()
 
 
 	# Step 5: Analysis
@@ -85,12 +82,7 @@ def get_parameters(data, target_feature_index):
 	id2config = res.get_id2config_mapping()
 	incumbent = res.get_incumbent_id()
 
-	# print('Best found configuration:', id2config[incumbent]['config'])
-	# print('A total of %i unique configurations where sampled.' % len(id2config.keys()))
-	# print('A total of %i runs where executed.' % len(res.get_all_runs()))
-	# print('Total budget corresponds to %.1f full function evaluations.'%(sum([r.budget for r in res.get_all_runs()])/args.max_budget))
+	with open(os.path.join(args.shared_directory, 'results.pkl'), 'wb') as fh:
+		pickle.dump(res, fh)
 
-	bohb.shutdown(shutdown_workers=True)
-	NS.shutdown()
-
-    return id2config[incumbent]['config']
+	return id2config[incumbent]['config']
