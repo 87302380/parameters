@@ -1,0 +1,61 @@
+{
+    "lpi": {
+        "imp": {
+            "bagging_fraction": 0.17659083448315918,
+            "bagging_freq": 1.2208051939718715e-32,
+            "feature_fraction": 0.8148369607089913,
+            "lambda_l1": 0.000308658840258319,
+            "lambda_l2": 0.0037706747568291617,
+            "max_bin": 0.0006013056133720003,
+            "max_depth": 5.829483307931261e-06,
+            "min_data_in_leaf": 0.0036872806810105225,
+            "min_gain_to_split": 0.00014541119002266586,
+            "num_leaves": 5.304424304890924e-05
+        },
+        "order": [
+            "feature_fraction",
+            "bagging_fraction",
+            "lambda_l2",
+            "min_data_in_leaf",
+            "max_bin",
+            "lambda_l1",
+            "min_gain_to_split",
+            "num_leaves",
+            "max_depth",
+            "bagging_freq"
+        ]
+    }
+}00592714,
+            "feature_fraction": 0.46986362243133606,
+            "lambda_l1": 3.7805804427713875e-05,
+            "lambda_l2": 0.08918973591444268,
+            "max_bin": 0.002873101527600265,
+            "max_depth": 2.599014408207718e-06,
+            "min_data_in_leaf": 0.019836954387870736,
+            "min_gain_to_split": 0.0014115489180228664,
+            "num_leaves": 0.0011892815028604338
+        },
+        "order": [
+            "feature_fraction",
+            "bagging_fraction",
+            "bagging_freq",
+            "lambda_l2",
+            "min_data_in_leaf",
+            "max_bin",
+            "min_gain_to_split",
+            "num_leaves",
+            "lambda_l1",
+            "max_depth",
+            "['feature_fraction', 'bagging_fraction']",
+            "['feature_fraction', 'bagging_freq']",
+            "['feature_fraction', 'lambda_l2']",
+            "['feature_fraction', 'min_data_in_leaf']",
+            "['bagging_fraction', 'bagging_freq']",
+            "['bagging_fraction', 'lambda_l2']",
+            "['bagging_fraction', 'min_data_in_leaf']",
+            "['bagging_freq', 'lambda_l2']",
+            "['bagging_freq', 'min_data_in_leaf']",
+            "['lambda_l2', 'min_data_in_leaf']"
+        ]
+    }
+}
