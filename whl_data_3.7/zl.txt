@@ -7,6 +7,8 @@ cd /home/parameters/whl_data_3.7
 pip3 install *.whl
 pip3 install cave
 cd ..
+apt-get update
+apt-get install build-essential swig
 cave --folders /home/parameters/result --file_format BOHB --output CAVE_BOHB_results
 
 
