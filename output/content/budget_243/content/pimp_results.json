@@ -1,0 +1,60 @@
+{
+    "lpi": {
+        "imp": {
+            "bagging_fraction": 0.0,
+            "bagging_freq": 0.17075886929877435,
+            "feature_fraction": 0.0,
+            "lambda_l1": 0.0,
+            "lambda_l2": 0.0,
+            "max_bin": 0.0,
+            "max_depth": 0.0,
+            "min_data_in_leaf": 0.7632156912109229,
+            "min_gain_to_split": 0.0660254394903028,
+            "num_leaves": 0.0
+        },
+        "order": [
+            "min_data_in_leaf",
+            "bagging_freq",
+            "min_gain_to_split",
+            "bagging_fraction",
+            "feature_fraction",
+            "lambda_l1",
+            "lambda_l2",
+            "max_bin",
+            "max_depth",
+            "num_leaves"
+        ]
+    }
+}      "feature_fraction": 0.22945935241462873,
+            "lambda_l1": 0.0,
+            "lambda_l2": 0.250000000000024,
+            "max_bin": 0.01201341729908974,
+            "max_depth": 0.06250000000000011,
+            "min_data_in_leaf": 0.0,
+            "min_gain_to_split": 0.36787699423057896,
+            "num_leaves": 0.06250000000000007
+        },
+        "order": [
+            "min_gain_to_split",
+            "lambda_l2",
+            "feature_fraction",
+            "max_depth",
+            "num_leaves",
+            "max_bin",
+            "bagging_freq",
+            "bagging_fraction",
+            "lambda_l1",
+            "min_data_in_leaf",
+            "['min_gain_to_split', 'lambda_l2']",
+            "['min_gain_to_split', 'feature_fraction']",
+            "['min_gain_to_split', 'max_depth']",
+            "['min_gain_to_split', 'num_leaves']",
+            "['lambda_l2', 'feature_fraction']",
+            "['lambda_l2', 'max_depth']",
+            "['lambda_l2', 'num_leaves']",
+            "['feature_fraction', 'max_depth']",
+            "['feature_fraction', 'num_leaves']",
+            "['max_depth', 'num_leaves']"
+        ]
+    }
+}

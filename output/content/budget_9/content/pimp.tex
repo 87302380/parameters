@@ -1,0 +1,33 @@
+\begin{table}
+\begin{tabular}{r|r|r}
+\toprule
+                                         & fANOVA &  LPI  \\
+\hline
+feature_fraction                         & $ 46.986$ & $ 81.484$\\
+bagging_fraction                         & $ 17.227$ & $ 17.659$\\
+bagging_freq                             & $ 12.079$ & $ 0.000$\\
+lambda_l2                                & $ 8.919$ & $ 0.377$\\
+min_data_in_leaf                         & $ 1.984$ & $ 0.369$\\
+max_bin                                  & $ 0.287$ & $ 0.060$\\
+min_gain_to_split                        & $ 0.141$ & $ 0.015$\\
+num_leaves                               & $ 0.119$ & $ 0.005$\\
+lambda_l1                                & $ 0.004$ & $ 0.031$\\
+max_depth                                & $ 0.000$ & $ 0.001$\\
+['feature_fraction', 'bagging_fraction'] & $ 1.527$ &      -\\
+['feature_fraction', 'bagging_freq']     & $ 0.589$ &      -\\
+['feature_fraction', 'lambda_l2']        & $ 0.283$ &      -\\
+['feature_fraction', 'min_data_in_leaf'] & $ 4.244$ &      -\\
+['bagging_fraction', 'bagging_freq']     & $ 1.513$ &      -\\
+['bagging_fraction', 'lambda_l2']        & $ 0.021$ &      -\\
+['bagging_fraction', 'min_data_in_leaf'] & $ 0.755$ &      -\\
+['bagging_freq', 'lambda_l2']            & $ 1.731$ &      -\\
+['bagging_freq', 'min_data_in_leaf']     & $ 0.001$ &      -\\
+['lambda_l2', 'min_data_in_leaf']        & $ 0.008$ &      -\\
+\bottomrule
+\end{tabular}
+\caption{Parameter Importance values, obtained using the PIMP package. Ablation values are percentages of improvement a single parameter change obtained between the default and an incumbent configuration.
+fANOVA values are percentages that show how much variance across the whole ConfigSpace can be explained by that parameter.
+Forward Selection values are RMSE values obtained using only a subset of parameters for prediction.
+fANOVA and Forward Selection try to estimate the importances across the whole parameter space, while ablation tries to estimate them between two given configurations.}
+\label{tab:pimp}
+\end{table}

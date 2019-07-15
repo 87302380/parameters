@@ -1,0 +1,60 @@
+{
+    "lpi": {
+        "imp": {
+            "bagging_fraction": 0.03134107592331623,
+            "bagging_freq": 1.0210837390376119e-29,
+            "feature_fraction": 1.0210837390376119e-29,
+            "lambda_l1": 0.05499309384122549,
+            "lambda_l2": 0.7345788765808141,
+            "max_bin": 1.0210837390376119e-29,
+            "max_depth": 1.0210837390376119e-29,
+            "min_data_in_leaf": 0.03648953403497987,
+            "min_gain_to_split": 0.0024288611275110283,
+            "num_leaves": 0.14016855849215326
+        },
+        "order": [
+            "lambda_l2",
+            "num_leaves",
+            "lambda_l1",
+            "min_data_in_leaf",
+            "bagging_fraction",
+            "min_gain_to_split",
+            "bagging_freq",
+            "feature_fraction",
+            "max_bin",
+            "max_depth"
+        ]
+    }
+}39991933777996,
+            "lambda_l1": 0.08044750009439122,
+            "lambda_l2": 0.6725263341851189,
+            "max_bin": 0.0026907513904822333,
+            "max_depth": 0.025102981977327347,
+            "min_data_in_leaf": 0.008707605884628801,
+            "min_gain_to_split": 0.00100013074642613,
+            "num_leaves": 0.001665754233391662
+        },
+        "order": [
+            "lambda_l2",
+            "bagging_freq",
+            "lambda_l1",
+            "bagging_fraction",
+            "max_depth",
+            "min_data_in_leaf",
+            "max_bin",
+            "num_leaves",
+            "min_gain_to_split",
+            "feature_fraction",
+            "['lambda_l2', 'bagging_freq']",
+            "['lambda_l2', 'lambda_l1']",
+            "['lambda_l2', 'bagging_fraction']",
+            "['lambda_l2', 'max_depth']",
+            "['bagging_freq', 'lambda_l1']",
+            "['bagging_freq', 'bagging_fraction']",
+            "['bagging_freq', 'max_depth']",
+            "['lambda_l1', 'bagging_fraction']",
+            "['lambda_l1', 'max_depth']",
+            "['bagging_fraction', 'max_depth']"
+        ]
+    }
+}
