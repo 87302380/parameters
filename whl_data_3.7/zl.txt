@@ -1,5 +1,16 @@
 docker pull python
 docker run -dit python
-docker exec -i -t 123 /bin/bash
+docker exec -i -t "id(No need to complete)" /bin/bash
+cd home
 git clone https://github.com/87302380/parameters.git
+cd /home/parameters/whl_data_3.7
+pip3 install *.whl
+pip3 install cave
+cd ..
+cave --folders /home/parameters/result --file_format BOHB --output CAVE_BOHB_results
+
+
+
+
+Generate whl
 python3 setup.py sdist bdist_wheel
