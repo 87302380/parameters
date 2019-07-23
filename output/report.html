@@ -1,0 +1,1174 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<title>CAVE</title>
+<link href="html/css/accordion.css" rel="stylesheet" />
+<link href="html/css/table.css" rel="stylesheet" />
+<link href="html/css/lightbox.min.css" rel="stylesheet" />
+<link href="html/css/help-tip.css" rel="stylesheet" />
+<link href="html/css/global.css" rel="stylesheet" />
+<link href="html/css/back-to-top.css" rel="stylesheet" />
+<link href="html/css/tabs.css" rel="stylesheet" />
+
+<link href="html/css/bokeh-1.0.1.min.css" rel="stylesheet" type="text/css">
+<link href="html/css/bokeh-widgets-1.0.1.min.css" rel="stylesheet" type="text/css">
+<link href="html/css/bokeh-tables-1.0.1.min.css" rel="stylesheet" type="text/css">
+
+<script src="html/js/tabs.js"></script>
+
+<script src="html/js/bokeh-1.0.1.min.js"></script>
+<script src="html/js/bokeh-widgets-1.0.1.min.js"></script>
+<script src="html/js/bokeh-tables-1.0.1.min.js"></script>
+
+<!--Below here are the includes of scripts for the report (e.g. bokeh)-->
+<script src="content/js/BOHBLearningCurves_243_171_script.js"></script>
+<script src="content/js/BudgetCorrelation_243_172_script.js"></script>
+<script src="content/js/Interactive_243_173_script.js"></script>
+<script src="content/js/CostOverTime_243_174_script.js"></script>
+<script src="content/js/budget_9_9_177_script.js"></script>
+<script src="content/js/budget_27_27_178_script.js"></script>
+<script src="content/js/budget_81_81_179_script.js"></script>
+<script src="content/js/budget_243_243_180_script.js"></script>
+
+<!--Above here are the includes of scripts for the report (e.g. bokeh)-->
+
+</head>
+<body>
+<script src="http://www.w3schools.com/lib/w3data.js"></script>
+<script src="html/js/lightbox-plus-jquery.min.js"></script>
+<header>
+    <div class='l-wrapper'>
+        <img class='logo logo--configurator' src="html/images/BOHB_logo.png" />
+        <img class='logo logo--ml' src="html/images/automl-logo.png" />
+    </div>
+</header>
+<div class='l-wrapper'>
+<h1>CAVE</h1>
+<div class="accordion">Meta Data <div class="help-tip"><p>Meta data, i.e. number of instances and parameters as well as configuration budget. Statistics apply to the best run, if multiple configurator runs are compared.</p></div></div>
+<div class="panel">
+<div class="accordion">General <div class="help-tip"><p>General information about the optimization scenario.</p></div></div>
+<div class="panel">
+<div style="overflow-x: auto" align="center">
+<table border="1" class="dataframe">
+  <tbody>
+    <tr>
+      <th># aggregated parallel BOHB runs</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th># parameters</th>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>Deterministic target algorithm</th>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>Optimized run objective</th>
+      <td>quality</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div><div class="accordion">Run-Specific <div class="help-tip"><p>Information to specific runs (if there are multiple runs). Interesting for parallel optimizations or usage of budgets/fidelities.</p></div></div>
+<div class="panel">
+<div style="overflow-x: auto" align="center">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>budget 9</th>
+      <th>budget 27</th>
+      <th>budget 81</th>
+      <th>budget 243</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Total time spent evaluating configurations</th>
+      <td>6.69 sec</td>
+      <td>5.76 sec</td>
+      <td>3.84 sec</td>
+      <td>2.33 sec</td>
+    </tr>
+    <tr>
+      <th>Average time per configuration (mean / std)</th>
+      <td>0.25 sec (±  0.05)</td>
+      <td>0.32 sec (±  0.08)</td>
+      <td>0.32 sec (±  0.10)</td>
+      <td>0.29 sec (±  0.05)</td>
+    </tr>
+    <tr>
+      <th># evaluated configurations</th>
+      <td>27</td>
+      <td>18</td>
+      <td>12</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th># changed parameters (default to incumbent)</th>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>Configuration origins</th>
+      <td>Random : 23, Acquisition Function : 4</td>
+      <td>Random : 9, Acquisition Function : 9</td>
+      <td>Random : 8, Acquisition Function : 4</td>
+      <td>Random : 5, Acquisition Function : 3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div></div><div class="accordion">Incumbents Over Budgets <div class="help-tip"><p>Show the incumbents for each budget (i.e. the best configuration by kernel-estimation using data from that budget).</p></div></div>
+<div class="panel">
+<div style="overflow-x: auto" align="center">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>budget 9</th>
+      <th>budget 27</th>
+      <th>budget 81</th>
+      <th>budget 243</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bagging_fraction</th>
+      <td>0.681699</td>
+      <td>0.681699</td>
+      <td>0.681699</td>
+      <td>0.681699</td>
+    </tr>
+    <tr>
+      <th>bagging_freq</th>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>feature_fraction</th>
+      <td>0.677616</td>
+      <td>0.677616</td>
+      <td>0.677616</td>
+      <td>0.677616</td>
+    </tr>
+    <tr>
+      <th>lambda_l1</th>
+      <td>0.382781</td>
+      <td>0.382781</td>
+      <td>0.382781</td>
+      <td>0.382781</td>
+    </tr>
+    <tr>
+      <th>lambda_l2</th>
+      <td>0.583495</td>
+      <td>0.583495</td>
+      <td>0.583495</td>
+      <td>0.583495</td>
+    </tr>
+    <tr>
+      <th>max_bin</th>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>max_depth</th>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>min_data_in_leaf</th>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>min_gain_to_split</th>
+      <td>0.3143</td>
+      <td>0.3143</td>
+      <td>0.3143</td>
+      <td>0.3143</td>
+    </tr>
+    <tr>
+      <th>num_leaves</th>
+      <td>33</td>
+      <td>33</td>
+      <td>33</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <th>Cost</th>
+      <td>0.007</td>
+      <td>0.007</td>
+      <td>0.007</td>
+      <td>0.007</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div><div class="accordion">BOHB Learning Curves <div class="help-tip"><p>Visualizing the learning curves of all individual HyperBand-iterations. Model-based picks are marked with a cross. The config-id tuple denotes (iteration, stage, id_within_stage), where the iteration is the hyperband iteration and the stage is the index of the budget in which the configuration was first sampled (should be 0). The third index is just a sequential enumeration. This id can be interpreted as a nested index-identifier.</p></div></div>
+<div class="panel">
+<div align="center">
+
+<div class="bk-root" id="af609734-1dff-47be-93d6-e656af9c6f8f"></div>
+</div>
+</div><div class="accordion">Budget Correlation <div class="help-tip"><p>Use spearman correlation to get a correlation-value and a p-value for every pairwise combination of budgets. First value is the correlation, second is the p-value (the p-value roughly estimates the likelihood to obtain this correlation coefficient with uncorrelated datasets). This can be used to estimate how well a budget approximates the function to be optimized.</p></div></div>
+<div class="panel">
+<div align="center">
+
+<div class="bk-root" id="caad6200-ec62-4f4d-938b-a40089d2703f"></div>
+</div>
+</div><div class="accordion">Configurators Behavior </div>
+<div class="panel">
+<div class="accordion">Configurator Footprint <div class="help-tip"><p>Analysis of the iteratively sampled configurations during the optimization procedure.  Multi-dimensional scaling (MDS) is used to reduce dimensionality of the search space and plot the distribution of evaluated configurations. The larger the dot, the more often the configuration was evaluated on instances from the set. Configurations that were incumbents at least once during optimization are marked as red squares.  Configurations acquired through local search are marked with a 'x'.  The downward triangle denotes the final incumbent, whereas the orange upward triangle denotes the default configuration.  The heatmap and the colorbar correspond to the predicted performance in that part of the search space.  </p></div></div>
+<div class="panel">
+<div class="accordion">Interactive </div>
+<div class="panel">
+<div align="center">
+
+<div class="bk-root" id="d6f64978-4306-4be3-85a9-f7c108478228"></div>
+</div>
+</div><div class="accordion">Static </div>
+<div class="panel">
+<div align="center">
+<a href="cfp_over_time/configurator_footprint0.png" data-lightbox="['output/cfp_over_time/configurator_footprint0.png', 'output/cfp_over_time/configurator_footprint1.png', 'output/cfp_over_time/configurator_footprint2.png']" data-title="cfp_over_time/configurator_footprint0.png"><img src="cfp_over_time/configurator_footprint0.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." style="float: left; width: 32%; margin-right: 1%; margin-bottom: 0.5em;"></a>
+<a href="cfp_over_time/configurator_footprint1.png" data-lightbox="['output/cfp_over_time/configurator_footprint0.png', 'output/cfp_over_time/configurator_footprint1.png', 'output/cfp_over_time/configurator_footprint2.png']" data-title="cfp_over_time/configurator_footprint1.png"><img src="cfp_over_time/configurator_footprint1.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." style="float: left; width: 32%; margin-right: 1%; margin-bottom: 0.5em;"></a>
+<a href="cfp_over_time/configurator_footprint2.png" data-lightbox="['output/cfp_over_time/configurator_footprint0.png', 'output/cfp_over_time/configurator_footprint1.png', 'output/cfp_over_time/configurator_footprint2.png']" data-title="cfp_over_time/configurator_footprint2.png"><img src="cfp_over_time/configurator_footprint2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." style="float: left; width: 32%; margin-right: 1%; margin-bottom: 0.5em;"></a>
+<p style="clear: both;"></div>
+</div></div><div class="accordion">Cost Over Time <div class="help-tip"><p>Depicts the average cost of the best so far found configuration (using all trajectory data) over the time spent by the configurator (including target algorithm runs and the overhead generated by the configurator) If the curve flattens out early, it indicates that too much time was spent for the configurator run; whereas a curve that is still improving at the end of the budget indicates that one should increase the configuration budget. The plotted standard deviation gives the uncertainty over multiple configurator runs.</p></div></div>
+<div class="panel">
+<div align="center">
+
+<div class="bk-root" id="f12675b1-8275-4a91-9ddb-604dc8283a3d"></div>
+</div>
+</div><div class="accordion">Parallel Coordinates <div class="help-tip"><p>Previously used by Golovin et al.  to study the frequency of chosen parameter settings in black-box-optimization.  Each line corresponds to one configuration in the runhistory and shows the parameter settings and the corresponding (estimated) average cost. To handle large configuration spaces with hundreds of parameters, the (at most) 10 most important parameters based on a fANOVA parameter importance analysis are plotted.  To emphasize better configurations, the performance is encoded in the color of each line, ranging from blue to red. These plots provide insights into whether the configurator focused on specific parameter values and how these correlate to their costs.  NOTE: the given runhistory should contain only optimization and no validation to analyze the explored parameter-space.  </p></div></div>
+<div class="panel">
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Parallel Coordinates', 'budget 9')" id="defaultOpen175">budget 9</button>
+  <button class="tablinks" onclick="openTab(event, 'Parallel Coordinates', 'budget 27')">budget 27</button>
+  <button class="tablinks" onclick="openTab(event, 'Parallel Coordinates', 'budget 81')">budget 81</button>
+  <button class="tablinks" onclick="openTab(event, 'Parallel Coordinates', 'budget 243')">budget 243</button>
+</div>
+<div id="Parallel Coordinatesbudget 9" class="tabcontent">
+<div class="pane">
+<div align="center">
+<a href="content/budget_9/parallel_coordinates_linear_cost_log_sampling_27.png" data-lightbox="['output/content/budget_9/parallel_coordinates_linear_cost_log_sampling_27.png']" data-title="content/budget_9/parallel_coordinates_linear_cost_log_sampling_27.png"><img src="content/budget_9/parallel_coordinates_linear_cost_log_sampling_27.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." style="float: left; width: 99%; margin-right: 1%; margin-bottom: 0.5em;"></a>
+<p style="clear: both;"></div>
+</div>
+</div>
+<div id="Parallel Coordinatesbudget 27" class="tabcontent">
+<div class="pane">
+<div align="center">
+<a href="content/budget_27/parallel_coordinates_linear_cost_log_sampling_18.png" data-lightbox="['output/content/budget_27/parallel_coordinates_linear_cost_log_sampling_18.png']" data-title="content/budget_27/parallel_coordinates_linear_cost_log_sampling_18.png"><img src="content/budget_27/parallel_coordinates_linear_cost_log_sampling_18.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." style="float: left; width: 99%; margin-right: 1%; margin-bottom: 0.5em;"></a>
+<p style="clear: both;"></div>
+</div>
+</div>
+<div id="Parallel Coordinatesbudget 81" class="tabcontent">
+<div class="pane">
+<div align="center">
+<a href="content/budget_81/parallel_coordinates_linear_cost_log_sampling_12.png" data-lightbox="['output/content/budget_81/parallel_coordinates_linear_cost_log_sampling_12.png']" data-title="content/budget_81/parallel_coordinates_linear_cost_log_sampling_12.png"><img src="content/budget_81/parallel_coordinates_linear_cost_log_sampling_12.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." style="float: left; width: 99%; margin-right: 1%; margin-bottom: 0.5em;"></a>
+<p style="clear: both;"></div>
+</div>
+</div>
+<div id="Parallel Coordinatesbudget 243" class="tabcontent">
+<div class="pane">
+<div align="center">
+<a href="content/budget_243/parallel_coordinates_linear_cost_log_sampling_8.png" data-lightbox="['output/content/budget_243/parallel_coordinates_linear_cost_log_sampling_8.png']" data-title="content/budget_243/parallel_coordinates_linear_cost_log_sampling_8.png"><img src="content/budget_243/parallel_coordinates_linear_cost_log_sampling_8.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." style="float: left; width: 99%; margin-right: 1%; margin-bottom: 0.5em;"></a>
+<p style="clear: both;"></div>
+</div>
+</div>
+<script> 
+// Get the element with id="defaultOpen175" and click on it 
+document.getElementById("defaultOpen175").click(); 
+</script> 
+</div></div><div class="accordion">Parameter Importance <div class="help-tip"><p>
+Parameter Importance analysis to determine
+which of the parameters most influence the
+analysed algorithms performance.</p></div></div>
+<div class="panel">
+<div class="accordion">Importance Table <div class="help-tip"><p>Parameters are initially sorted by average. Only parameters with an importance greater than 5 in any of the methods are shown.  Note, that the values of the used methods are not directly comparable. For more information on the metrics, see respective tooltips.</p></div></div>
+<div class="panel">
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Importance Table', 'budget 9')" id="defaultOpen176">budget 9</button>
+  <button class="tablinks" onclick="openTab(event, 'Importance Table', 'budget 27')">budget 27</button>
+  <button class="tablinks" onclick="openTab(event, 'Importance Table', 'budget 81')">budget 81</button>
+  <button class="tablinks" onclick="openTab(event, 'Importance Table', 'budget 243')">budget 243</button>
+</div>
+<div id="Importance Tablebudget 9" class="tabcontent">
+<div class="pane">
+<div align="center">
+
+<div class="bk-root" id="5acf3d1c-359e-4a7f-8840-58fed2bb3a13"></div>
+</div>
+</div>
+</div>
+<div id="Importance Tablebudget 27" class="tabcontent">
+<div class="pane">
+<div align="center">
+
+<div class="bk-root" id="df7c95de-a457-42a2-961a-db86b1cac485"></div>
+</div>
+</div>
+</div>
+<div id="Importance Tablebudget 81" class="tabcontent">
+<div class="pane">
+<div align="center">
+
+<div class="bk-root" id="ce578168-3939-4847-a178-90f9582fcae6"></div>
+</div>
+</div>
+</div>
+<div id="Importance Tablebudget 243" class="tabcontent">
+<div class="pane">
+<div align="center">
+
+<div class="bk-root" id="f3889cd9-72f7-4e18-9753-fa43ef14c339"></div>
+</div>
+</div>
+</div>
+<script> 
+// Get the element with id="defaultOpen176" and click on it 
+document.getElementById("defaultOpen176").click(); 
+</script> 
+</div><div class="accordion">fANOVA <div class="help-tip"><p>fANOVA (functional analysis of variance) computes the fraction of the variance in the cost space explained by changing a parameter by marginalizing over all other parameters, for each parameter (or for pairs of parameters). Parameters with high importance scores will have a large impact on the performance.  To this end, a random forest is trained as an empirical performance model on the available empirical data from the available runhistories.</p></div></div>
+<div class="panel">
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'fANOVA', 'budget 9')" id="defaultOpen181">budget 9</button>
+  <button class="tablinks" onclick="openTab(event, 'fANOVA', 'budget 27')">budget 27</button>
+  <button class="tablinks" onclick="openTab(event, 'fANOVA', 'budget 81')">budget 81</button>
+  <button class="tablinks" onclick="openTab(event, 'fANOVA', 'budget 243')">budget 243</button>
+</div>
+<div id="fANOVAbudget 9" class="tabcontent">
+<div class="pane">
+<div class="accordion">Importance </div>
+<div class="panel">
+<div style="overflow-x: auto" align="center">
+<table border="1" class="dataframe">
+  <tbody>
+    <tr>
+      <th>-------------------- Single importance: --------------------</th>
+      <td>--------------------</td>
+    </tr>
+    <tr>
+      <th>feature_fraction</th>
+      <td>46.9864 +/- 37.6179</td>
+    </tr>
+    <tr>
+      <th>bagging_fraction</th>
+      <td>17.2271 +/- 28.8331</td>
+    </tr>
+    <tr>
+      <th>bagging_freq</th>
+      <td>12.0793 +/- 25.1606</td>
+    </tr>
+    <tr>
+      <th>lambda_l2</th>
+      <td>8.919 +/- 24.9451</td>
+    </tr>
+    <tr>
+      <th>min_data_in_leaf</th>
+      <td>1.9837 +/- 5.111</td>
+    </tr>
+    <tr>
+      <th>max_bin</th>
+      <td>0.2873 +/- 0.957</td>
+    </tr>
+    <tr>
+      <th>min_gain_to_split</th>
+      <td>0.1412 +/- 0.3806</td>
+    </tr>
+    <tr>
+      <th>num_leaves</th>
+      <td>0.1189 +/- 0.2759</td>
+    </tr>
+    <tr>
+      <th>-------------------- Pairwise importance: --------------------</th>
+      <td>--------------------</td>
+    </tr>
+    <tr>
+      <th>feature_fraction & min_data_in_leaf</th>
+      <td>4.2444 +/- 11.2969</td>
+    </tr>
+    <tr>
+      <th>bagging_freq & lambda_l2</th>
+      <td>1.7305 +/- 6.6888</td>
+    </tr>
+    <tr>
+      <th>feature_fraction & bagging_fraction</th>
+      <td>1.5272 +/- 1.5129</td>
+    </tr>
+    <tr>
+      <th>bagging_fraction & bagging_freq</th>
+      <td>1.5128 +/- 5.6573</td>
+    </tr>
+    <tr>
+      <th>bagging_fraction & min_data_in_leaf</th>
+      <td>0.7549 +/- 2.0061</td>
+    </tr>
+    <tr>
+      <th>feature_fraction & bagging_freq</th>
+      <td>0.589 +/- 1.5288</td>
+    </tr>
+    <tr>
+      <th>feature_fraction & lambda_l2</th>
+      <td>0.2833 +/- 0.5013</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div><div class="accordion">Marginals </div>
+<div class="panel">
+<div class="accordion">feature_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/feature_fraction.png" data-lightbox="content/budget_9/content/fanova/feature_fraction.png" data-title="content/budget_9/content/fanova/feature_fraction.png"><img src="content/budget_9/content/fanova/feature_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/bagging_fraction.png" data-lightbox="content/budget_9/content/fanova/bagging_fraction.png" data-title="content/budget_9/content/fanova/bagging_fraction.png"><img src="content/budget_9/content/fanova/bagging_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/bagging_freq.png" data-lightbox="content/budget_9/content/fanova/bagging_freq.png" data-title="content/budget_9/content/fanova/bagging_freq.png"><img src="content/budget_9/content/fanova/bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/lambda_l2.png" data-lightbox="content/budget_9/content/fanova/lambda_l2.png" data-title="content/budget_9/content/fanova/lambda_l2.png"><img src="content/budget_9/content/fanova/lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_data_in_leaf </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/min_data_in_leaf.png" data-lightbox="content/budget_9/content/fanova/min_data_in_leaf.png" data-title="content/budget_9/content/fanova/min_data_in_leaf.png"><img src="content/budget_9/content/fanova/min_data_in_leaf.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/max_bin.png" data-lightbox="content/budget_9/content/fanova/max_bin.png" data-title="content/budget_9/content/fanova/max_bin.png"><img src="content/budget_9/content/fanova/max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_gain_to_split </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/min_gain_to_split.png" data-lightbox="content/budget_9/content/fanova/min_gain_to_split.png" data-title="content/budget_9/content/fanova/min_gain_to_split.png"><img src="content/budget_9/content/fanova/min_gain_to_split.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">num_leaves </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/num_leaves.png" data-lightbox="content/budget_9/content/fanova/num_leaves.png" data-title="content/budget_9/content/fanova/num_leaves.png"><img src="content/budget_9/content/fanova/num_leaves.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div><div class="accordion">Pairwise Marginals </div>
+<div class="panel">
+<div class="accordion">feature_fraction & min_data_in_leaf </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/feature_fraction_min_data_in_leaf.png" data-lightbox="content/budget_9/content/fanova/feature_fraction_min_data_in_leaf.png" data-title="content/budget_9/content/fanova/feature_fraction_min_data_in_leaf.png"><img src="content/budget_9/content/fanova/feature_fraction_min_data_in_leaf.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq & lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/bagging_freq_lambda_l2.png" data-lightbox="content/budget_9/content/fanova/bagging_freq_lambda_l2.png" data-title="content/budget_9/content/fanova/bagging_freq_lambda_l2.png"><img src="content/budget_9/content/fanova/bagging_freq_lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">feature_fraction & bagging_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/feature_fraction_bagging_fraction.png" data-lightbox="content/budget_9/content/fanova/feature_fraction_bagging_fraction.png" data-title="content/budget_9/content/fanova/feature_fraction_bagging_fraction.png"><img src="content/budget_9/content/fanova/feature_fraction_bagging_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction & bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/bagging_fraction_bagging_freq.png" data-lightbox="content/budget_9/content/fanova/bagging_fraction_bagging_freq.png" data-title="content/budget_9/content/fanova/bagging_fraction_bagging_freq.png"><img src="content/budget_9/content/fanova/bagging_fraction_bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction & min_data_in_leaf </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/bagging_fraction_min_data_in_leaf.png" data-lightbox="content/budget_9/content/fanova/bagging_fraction_min_data_in_leaf.png" data-title="content/budget_9/content/fanova/bagging_fraction_min_data_in_leaf.png"><img src="content/budget_9/content/fanova/bagging_fraction_min_data_in_leaf.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">feature_fraction & bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/feature_fraction_bagging_freq.png" data-lightbox="content/budget_9/content/fanova/feature_fraction_bagging_freq.png" data-title="content/budget_9/content/fanova/feature_fraction_bagging_freq.png"><img src="content/budget_9/content/fanova/feature_fraction_bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">feature_fraction & lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/fanova/feature_fraction_lambda_l2.png" data-lightbox="content/budget_9/content/fanova/feature_fraction_lambda_l2.png" data-title="content/budget_9/content/fanova/feature_fraction_lambda_l2.png"><img src="content/budget_9/content/fanova/feature_fraction_lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div></div>
+</div>
+<div id="fANOVAbudget 27" class="tabcontent">
+<div class="pane">
+<div class="accordion">Importance </div>
+<div class="panel">
+<div style="overflow-x: auto" align="center">
+<table border="1" class="dataframe">
+  <tbody>
+    <tr>
+      <th>-------------------- Single importance: --------------------</th>
+      <td>--------------------</td>
+    </tr>
+    <tr>
+      <th>lambda_l2</th>
+      <td>67.2526 +/- 32.1439</td>
+    </tr>
+    <tr>
+      <th>bagging_freq</th>
+      <td>8.7852 +/- 23.4341</td>
+    </tr>
+    <tr>
+      <th>lambda_l1</th>
+      <td>8.0448 +/- 12.9982</td>
+    </tr>
+    <tr>
+      <th>bagging_fraction</th>
+      <td>2.6959 +/- 6.8514</td>
+    </tr>
+    <tr>
+      <th>max_depth</th>
+      <td>2.5103 +/- 6.7258</td>
+    </tr>
+    <tr>
+      <th>min_data_in_leaf</th>
+      <td>0.8708 +/- 2.5795</td>
+    </tr>
+    <tr>
+      <th>max_bin</th>
+      <td>0.2691 +/- 0.5152</td>
+    </tr>
+    <tr>
+      <th>num_leaves</th>
+      <td>0.1666 +/- 0.2987</td>
+    </tr>
+    <tr>
+      <th>min_gain_to_split</th>
+      <td>0.1 +/- 0.2512</td>
+    </tr>
+    <tr>
+      <th>-------------------- Pairwise importance: --------------------</th>
+      <td>--------------------</td>
+    </tr>
+    <tr>
+      <th>lambda_l2 & lambda_l1</th>
+      <td>4.152 +/- 7.7197</td>
+    </tr>
+    <tr>
+      <th>lambda_l2 & max_depth</th>
+      <td>1.4122 +/- 2.9569</td>
+    </tr>
+    <tr>
+      <th>lambda_l2 & bagging_fraction</th>
+      <td>0.6049 +/- 1.3433</td>
+    </tr>
+    <tr>
+      <th>bagging_freq & max_depth</th>
+      <td>0.3232 +/- 1.2516</td>
+    </tr>
+    <tr>
+      <th>lambda_l1 & bagging_fraction</th>
+      <td>0.2555 +/- 0.5139</td>
+    </tr>
+    <tr>
+      <th>bagging_freq & lambda_l1</th>
+      <td>0.1727 +/- 0.4821</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div><div class="accordion">Marginals </div>
+<div class="panel">
+<div class="accordion">lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/lambda_l2.png" data-lightbox="content/budget_27/content/fanova/lambda_l2.png" data-title="content/budget_27/content/fanova/lambda_l2.png"><img src="content/budget_27/content/fanova/lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/bagging_freq.png" data-lightbox="content/budget_27/content/fanova/bagging_freq.png" data-title="content/budget_27/content/fanova/bagging_freq.png"><img src="content/budget_27/content/fanova/bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l1 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/lambda_l1.png" data-lightbox="content/budget_27/content/fanova/lambda_l1.png" data-title="content/budget_27/content/fanova/lambda_l1.png"><img src="content/budget_27/content/fanova/lambda_l1.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/bagging_fraction.png" data-lightbox="content/budget_27/content/fanova/bagging_fraction.png" data-title="content/budget_27/content/fanova/bagging_fraction.png"><img src="content/budget_27/content/fanova/bagging_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_depth </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/max_depth.png" data-lightbox="content/budget_27/content/fanova/max_depth.png" data-title="content/budget_27/content/fanova/max_depth.png"><img src="content/budget_27/content/fanova/max_depth.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_data_in_leaf </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/min_data_in_leaf.png" data-lightbox="content/budget_27/content/fanova/min_data_in_leaf.png" data-title="content/budget_27/content/fanova/min_data_in_leaf.png"><img src="content/budget_27/content/fanova/min_data_in_leaf.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/max_bin.png" data-lightbox="content/budget_27/content/fanova/max_bin.png" data-title="content/budget_27/content/fanova/max_bin.png"><img src="content/budget_27/content/fanova/max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">num_leaves </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/num_leaves.png" data-lightbox="content/budget_27/content/fanova/num_leaves.png" data-title="content/budget_27/content/fanova/num_leaves.png"><img src="content/budget_27/content/fanova/num_leaves.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_gain_to_split </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/min_gain_to_split.png" data-lightbox="content/budget_27/content/fanova/min_gain_to_split.png" data-title="content/budget_27/content/fanova/min_gain_to_split.png"><img src="content/budget_27/content/fanova/min_gain_to_split.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div><div class="accordion">Pairwise Marginals </div>
+<div class="panel">
+<div class="accordion">lambda_l2 & lambda_l1 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/lambda_l2_lambda_l1.png" data-lightbox="content/budget_27/content/fanova/lambda_l2_lambda_l1.png" data-title="content/budget_27/content/fanova/lambda_l2_lambda_l1.png"><img src="content/budget_27/content/fanova/lambda_l2_lambda_l1.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l2 & max_depth </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/lambda_l2_max_depth.png" data-lightbox="content/budget_27/content/fanova/lambda_l2_max_depth.png" data-title="content/budget_27/content/fanova/lambda_l2_max_depth.png"><img src="content/budget_27/content/fanova/lambda_l2_max_depth.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l2 & bagging_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/lambda_l2_bagging_fraction.png" data-lightbox="content/budget_27/content/fanova/lambda_l2_bagging_fraction.png" data-title="content/budget_27/content/fanova/lambda_l2_bagging_fraction.png"><img src="content/budget_27/content/fanova/lambda_l2_bagging_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq & max_depth </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/bagging_freq_max_depth.png" data-lightbox="content/budget_27/content/fanova/bagging_freq_max_depth.png" data-title="content/budget_27/content/fanova/bagging_freq_max_depth.png"><img src="content/budget_27/content/fanova/bagging_freq_max_depth.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l1 & bagging_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/lambda_l1_bagging_fraction.png" data-lightbox="content/budget_27/content/fanova/lambda_l1_bagging_fraction.png" data-title="content/budget_27/content/fanova/lambda_l1_bagging_fraction.png"><img src="content/budget_27/content/fanova/lambda_l1_bagging_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq & lambda_l1 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/fanova/bagging_freq_lambda_l1.png" data-lightbox="content/budget_27/content/fanova/bagging_freq_lambda_l1.png" data-title="content/budget_27/content/fanova/bagging_freq_lambda_l1.png"><img src="content/budget_27/content/fanova/bagging_freq_lambda_l1.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div></div>
+</div>
+<div id="fANOVAbudget 81" class="tabcontent">
+<div class="pane">
+<div class="accordion">Importance </div>
+<div class="panel">
+<div style="overflow-x: auto" align="center">
+<table border="1" class="dataframe">
+  <tbody>
+    <tr>
+      <th>-------------------- Single importance: --------------------</th>
+      <td>--------------------</td>
+    </tr>
+    <tr>
+      <th>bagging_fraction</th>
+      <td>48.6336 +/- 43.8045</td>
+    </tr>
+    <tr>
+      <th>lambda_l2</th>
+      <td>25.2748 +/- 36.7558</td>
+    </tr>
+    <tr>
+      <th>bagging_freq</th>
+      <td>10.74 +/- 24.5407</td>
+    </tr>
+    <tr>
+      <th>min_data_in_leaf</th>
+      <td>4.4587 +/- 17.1215</td>
+    </tr>
+    <tr>
+      <th>max_bin</th>
+      <td>1.8567 +/- 3.0659</td>
+    </tr>
+    <tr>
+      <th>feature_fraction</th>
+      <td>1.0729 +/- 2.6004</td>
+    </tr>
+    <tr>
+      <th>num_leaves</th>
+      <td>0.3418 +/- 0.7185</td>
+    </tr>
+    <tr>
+      <th>lambda_l1</th>
+      <td>0.3052 +/- 0.9271</td>
+    </tr>
+    <tr>
+      <th>min_gain_to_split</th>
+      <td>0.2562 +/- 0.7564</td>
+    </tr>
+    <tr>
+      <th>-------------------- Pairwise importance: --------------------</th>
+      <td>--------------------</td>
+    </tr>
+    <tr>
+      <th>lambda_l2 & bagging_freq</th>
+      <td>1.6327 +/- 4.3328</td>
+    </tr>
+    <tr>
+      <th>bagging_fraction & lambda_l2</th>
+      <td>1.4872 +/- 2.7644</td>
+    </tr>
+    <tr>
+      <th>bagging_fraction & max_bin</th>
+      <td>0.7604 +/- 1.2738</td>
+    </tr>
+    <tr>
+      <th>bagging_freq & max_bin</th>
+      <td>0.2383 +/- 0.8651</td>
+    </tr>
+    <tr>
+      <th>lambda_l2 & max_bin</th>
+      <td>0.1397 +/- 0.4406</td>
+    </tr>
+    <tr>
+      <th>bagging_fraction & bagging_freq</th>
+      <td>0.1295 +/- 0.4475</td>
+    </tr>
+    <tr>
+      <th>bagging_freq & min_data_in_leaf</th>
+      <td>0.1011 +/- 0.3917</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div><div class="accordion">Marginals </div>
+<div class="panel">
+<div class="accordion">bagging_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/bagging_fraction.png" data-lightbox="content/budget_81/content/fanova/bagging_fraction.png" data-title="content/budget_81/content/fanova/bagging_fraction.png"><img src="content/budget_81/content/fanova/bagging_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/lambda_l2.png" data-lightbox="content/budget_81/content/fanova/lambda_l2.png" data-title="content/budget_81/content/fanova/lambda_l2.png"><img src="content/budget_81/content/fanova/lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/bagging_freq.png" data-lightbox="content/budget_81/content/fanova/bagging_freq.png" data-title="content/budget_81/content/fanova/bagging_freq.png"><img src="content/budget_81/content/fanova/bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_data_in_leaf </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/min_data_in_leaf.png" data-lightbox="content/budget_81/content/fanova/min_data_in_leaf.png" data-title="content/budget_81/content/fanova/min_data_in_leaf.png"><img src="content/budget_81/content/fanova/min_data_in_leaf.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/max_bin.png" data-lightbox="content/budget_81/content/fanova/max_bin.png" data-title="content/budget_81/content/fanova/max_bin.png"><img src="content/budget_81/content/fanova/max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">feature_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/feature_fraction.png" data-lightbox="content/budget_81/content/fanova/feature_fraction.png" data-title="content/budget_81/content/fanova/feature_fraction.png"><img src="content/budget_81/content/fanova/feature_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">num_leaves </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/num_leaves.png" data-lightbox="content/budget_81/content/fanova/num_leaves.png" data-title="content/budget_81/content/fanova/num_leaves.png"><img src="content/budget_81/content/fanova/num_leaves.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l1 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/lambda_l1.png" data-lightbox="content/budget_81/content/fanova/lambda_l1.png" data-title="content/budget_81/content/fanova/lambda_l1.png"><img src="content/budget_81/content/fanova/lambda_l1.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_gain_to_split </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/min_gain_to_split.png" data-lightbox="content/budget_81/content/fanova/min_gain_to_split.png" data-title="content/budget_81/content/fanova/min_gain_to_split.png"><img src="content/budget_81/content/fanova/min_gain_to_split.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div><div class="accordion">Pairwise Marginals </div>
+<div class="panel">
+<div class="accordion">lambda_l2 & bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/lambda_l2_bagging_freq.png" data-lightbox="content/budget_81/content/fanova/lambda_l2_bagging_freq.png" data-title="content/budget_81/content/fanova/lambda_l2_bagging_freq.png"><img src="content/budget_81/content/fanova/lambda_l2_bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction & lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/bagging_fraction_lambda_l2.png" data-lightbox="content/budget_81/content/fanova/bagging_fraction_lambda_l2.png" data-title="content/budget_81/content/fanova/bagging_fraction_lambda_l2.png"><img src="content/budget_81/content/fanova/bagging_fraction_lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction & max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/bagging_fraction_max_bin.png" data-lightbox="content/budget_81/content/fanova/bagging_fraction_max_bin.png" data-title="content/budget_81/content/fanova/bagging_fraction_max_bin.png"><img src="content/budget_81/content/fanova/bagging_fraction_max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq & max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/bagging_freq_max_bin.png" data-lightbox="content/budget_81/content/fanova/bagging_freq_max_bin.png" data-title="content/budget_81/content/fanova/bagging_freq_max_bin.png"><img src="content/budget_81/content/fanova/bagging_freq_max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l2 & max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/lambda_l2_max_bin.png" data-lightbox="content/budget_81/content/fanova/lambda_l2_max_bin.png" data-title="content/budget_81/content/fanova/lambda_l2_max_bin.png"><img src="content/budget_81/content/fanova/lambda_l2_max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction & bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/bagging_fraction_bagging_freq.png" data-lightbox="content/budget_81/content/fanova/bagging_fraction_bagging_freq.png" data-title="content/budget_81/content/fanova/bagging_fraction_bagging_freq.png"><img src="content/budget_81/content/fanova/bagging_fraction_bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq & min_data_in_leaf </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/fanova/bagging_freq_min_data_in_leaf.png" data-lightbox="content/budget_81/content/fanova/bagging_freq_min_data_in_leaf.png" data-title="content/budget_81/content/fanova/bagging_freq_min_data_in_leaf.png"><img src="content/budget_81/content/fanova/bagging_freq_min_data_in_leaf.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div></div>
+</div>
+<div id="fANOVAbudget 243" class="tabcontent">
+<div class="pane">
+<div class="accordion">Importance </div>
+<div class="panel">
+<div style="overflow-x: auto" align="center">
+<table border="1" class="dataframe">
+  <tbody>
+    <tr>
+      <th>-------------------- Single importance: --------------------</th>
+      <td>--------------------</td>
+    </tr>
+    <tr>
+      <th>min_gain_to_split</th>
+      <td>36.7877 +/- 47.5639</td>
+    </tr>
+    <tr>
+      <th>lambda_l2</th>
+      <td>25.0 +/- 43.3013</td>
+    </tr>
+    <tr>
+      <th>feature_fraction</th>
+      <td>22.9459 +/- 40.3755</td>
+    </tr>
+    <tr>
+      <th>max_depth</th>
+      <td>6.25 +/- 24.2061</td>
+    </tr>
+    <tr>
+      <th>num_leaves</th>
+      <td>6.25 +/- 24.2061</td>
+    </tr>
+    <tr>
+      <th>max_bin</th>
+      <td>1.2013 +/- 4.6528</td>
+    </tr>
+    <tr>
+      <th>bagging_freq</th>
+      <td>0.4403 +/- 1.7052</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div><div class="accordion">Marginals </div>
+<div class="panel">
+<div class="accordion">min_gain_to_split </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/fanova/min_gain_to_split.png" data-lightbox="content/budget_243/content/fanova/min_gain_to_split.png" data-title="content/budget_243/content/fanova/min_gain_to_split.png"><img src="content/budget_243/content/fanova/min_gain_to_split.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/fanova/lambda_l2.png" data-lightbox="content/budget_243/content/fanova/lambda_l2.png" data-title="content/budget_243/content/fanova/lambda_l2.png"><img src="content/budget_243/content/fanova/lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">feature_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/fanova/feature_fraction.png" data-lightbox="content/budget_243/content/fanova/feature_fraction.png" data-title="content/budget_243/content/fanova/feature_fraction.png"><img src="content/budget_243/content/fanova/feature_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_depth </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/fanova/max_depth.png" data-lightbox="content/budget_243/content/fanova/max_depth.png" data-title="content/budget_243/content/fanova/max_depth.png"><img src="content/budget_243/content/fanova/max_depth.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">num_leaves </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/fanova/num_leaves.png" data-lightbox="content/budget_243/content/fanova/num_leaves.png" data-title="content/budget_243/content/fanova/num_leaves.png"><img src="content/budget_243/content/fanova/num_leaves.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/fanova/max_bin.png" data-lightbox="content/budget_243/content/fanova/max_bin.png" data-title="content/budget_243/content/fanova/max_bin.png"><img src="content/budget_243/content/fanova/max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/fanova/bagging_freq.png" data-lightbox="content/budget_243/content/fanova/bagging_freq.png" data-title="content/budget_243/content/fanova/bagging_freq.png"><img src="content/budget_243/content/fanova/bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div></div>
+</div>
+<script> 
+// Get the element with id="defaultOpen181" and click on it 
+document.getElementById("defaultOpen181").click(); 
+</script> 
+</div><div class="accordion">Local Parameter Importance (LPI) <div class="help-tip"><p>Using an empirical performance model, performance changes of a configuration along each parameter are calculated. To quantify the importance of a parameter value, the variance of all cost values by changing that parameter are predicted and then the fraction of all variances is computed. This analysis is inspired by the human behaviour to look for improvements in the neighborhood of individual parameters of a configuration.</p></div></div>
+<div class="panel">
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Local Parameter Importance (LPI)', 'budget 9')" id="defaultOpen182">budget 9</button>
+  <button class="tablinks" onclick="openTab(event, 'Local Parameter Importance (LPI)', 'budget 27')">budget 27</button>
+  <button class="tablinks" onclick="openTab(event, 'Local Parameter Importance (LPI)', 'budget 81')">budget 81</button>
+  <button class="tablinks" onclick="openTab(event, 'Local Parameter Importance (LPI)', 'budget 243')">budget 243</button>
+</div>
+<div id="Local Parameter Importance (LPI)budget 9" class="tabcontent">
+<div class="pane">
+<div class="accordion">feature_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/lpi/feature_fraction.png" data-lightbox="content/budget_9/content/lpi/feature_fraction.png" data-title="content/budget_9/content/lpi/feature_fraction.png"><img src="content/budget_9/content/lpi/feature_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/lpi/bagging_fraction.png" data-lightbox="content/budget_9/content/lpi/bagging_fraction.png" data-title="content/budget_9/content/lpi/bagging_fraction.png"><img src="content/budget_9/content/lpi/bagging_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/lpi/lambda_l2.png" data-lightbox="content/budget_9/content/lpi/lambda_l2.png" data-title="content/budget_9/content/lpi/lambda_l2.png"><img src="content/budget_9/content/lpi/lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_data_in_leaf </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/lpi/min_data_in_leaf.png" data-lightbox="content/budget_9/content/lpi/min_data_in_leaf.png" data-title="content/budget_9/content/lpi/min_data_in_leaf.png"><img src="content/budget_9/content/lpi/min_data_in_leaf.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/lpi/max_bin.png" data-lightbox="content/budget_9/content/lpi/max_bin.png" data-title="content/budget_9/content/lpi/max_bin.png"><img src="content/budget_9/content/lpi/max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l1 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/lpi/lambda_l1.png" data-lightbox="content/budget_9/content/lpi/lambda_l1.png" data-title="content/budget_9/content/lpi/lambda_l1.png"><img src="content/budget_9/content/lpi/lambda_l1.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_gain_to_split </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/lpi/min_gain_to_split.png" data-lightbox="content/budget_9/content/lpi/min_gain_to_split.png" data-title="content/budget_9/content/lpi/min_gain_to_split.png"><img src="content/budget_9/content/lpi/min_gain_to_split.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">num_leaves </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/lpi/num_leaves.png" data-lightbox="content/budget_9/content/lpi/num_leaves.png" data-title="content/budget_9/content/lpi/num_leaves.png"><img src="content/budget_9/content/lpi/num_leaves.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_depth </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/lpi/max_depth.png" data-lightbox="content/budget_9/content/lpi/max_depth.png" data-title="content/budget_9/content/lpi/max_depth.png"><img src="content/budget_9/content/lpi/max_depth.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_9/content/lpi/bagging_freq.png" data-lightbox="content/budget_9/content/lpi/bagging_freq.png" data-title="content/budget_9/content/lpi/bagging_freq.png"><img src="content/budget_9/content/lpi/bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div>
+</div>
+<div id="Local Parameter Importance (LPI)budget 27" class="tabcontent">
+<div class="pane">
+<div class="accordion">lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/lpi/lambda_l2.png" data-lightbox="content/budget_27/content/lpi/lambda_l2.png" data-title="content/budget_27/content/lpi/lambda_l2.png"><img src="content/budget_27/content/lpi/lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">num_leaves </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/lpi/num_leaves.png" data-lightbox="content/budget_27/content/lpi/num_leaves.png" data-title="content/budget_27/content/lpi/num_leaves.png"><img src="content/budget_27/content/lpi/num_leaves.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l1 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/lpi/lambda_l1.png" data-lightbox="content/budget_27/content/lpi/lambda_l1.png" data-title="content/budget_27/content/lpi/lambda_l1.png"><img src="content/budget_27/content/lpi/lambda_l1.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_data_in_leaf </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/lpi/min_data_in_leaf.png" data-lightbox="content/budget_27/content/lpi/min_data_in_leaf.png" data-title="content/budget_27/content/lpi/min_data_in_leaf.png"><img src="content/budget_27/content/lpi/min_data_in_leaf.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/lpi/bagging_fraction.png" data-lightbox="content/budget_27/content/lpi/bagging_fraction.png" data-title="content/budget_27/content/lpi/bagging_fraction.png"><img src="content/budget_27/content/lpi/bagging_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_gain_to_split </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/lpi/min_gain_to_split.png" data-lightbox="content/budget_27/content/lpi/min_gain_to_split.png" data-title="content/budget_27/content/lpi/min_gain_to_split.png"><img src="content/budget_27/content/lpi/min_gain_to_split.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/lpi/bagging_freq.png" data-lightbox="content/budget_27/content/lpi/bagging_freq.png" data-title="content/budget_27/content/lpi/bagging_freq.png"><img src="content/budget_27/content/lpi/bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">feature_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/lpi/feature_fraction.png" data-lightbox="content/budget_27/content/lpi/feature_fraction.png" data-title="content/budget_27/content/lpi/feature_fraction.png"><img src="content/budget_27/content/lpi/feature_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/lpi/max_bin.png" data-lightbox="content/budget_27/content/lpi/max_bin.png" data-title="content/budget_27/content/lpi/max_bin.png"><img src="content/budget_27/content/lpi/max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_depth </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_27/content/lpi/max_depth.png" data-lightbox="content/budget_27/content/lpi/max_depth.png" data-title="content/budget_27/content/lpi/max_depth.png"><img src="content/budget_27/content/lpi/max_depth.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div>
+</div>
+<div id="Local Parameter Importance (LPI)budget 81" class="tabcontent">
+<div class="pane">
+<div class="accordion">bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/lpi/bagging_freq.png" data-lightbox="content/budget_81/content/lpi/bagging_freq.png" data-title="content/budget_81/content/lpi/bagging_freq.png"><img src="content/budget_81/content/lpi/bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/lpi/bagging_fraction.png" data-lightbox="content/budget_81/content/lpi/bagging_fraction.png" data-title="content/budget_81/content/lpi/bagging_fraction.png"><img src="content/budget_81/content/lpi/bagging_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/lpi/lambda_l2.png" data-lightbox="content/budget_81/content/lpi/lambda_l2.png" data-title="content/budget_81/content/lpi/lambda_l2.png"><img src="content/budget_81/content/lpi/lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">num_leaves </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/lpi/num_leaves.png" data-lightbox="content/budget_81/content/lpi/num_leaves.png" data-title="content/budget_81/content/lpi/num_leaves.png"><img src="content/budget_81/content/lpi/num_leaves.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_data_in_leaf </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/lpi/min_data_in_leaf.png" data-lightbox="content/budget_81/content/lpi/min_data_in_leaf.png" data-title="content/budget_81/content/lpi/min_data_in_leaf.png"><img src="content/budget_81/content/lpi/min_data_in_leaf.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">feature_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/lpi/feature_fraction.png" data-lightbox="content/budget_81/content/lpi/feature_fraction.png" data-title="content/budget_81/content/lpi/feature_fraction.png"><img src="content/budget_81/content/lpi/feature_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l1 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/lpi/lambda_l1.png" data-lightbox="content/budget_81/content/lpi/lambda_l1.png" data-title="content/budget_81/content/lpi/lambda_l1.png"><img src="content/budget_81/content/lpi/lambda_l1.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/lpi/max_bin.png" data-lightbox="content/budget_81/content/lpi/max_bin.png" data-title="content/budget_81/content/lpi/max_bin.png"><img src="content/budget_81/content/lpi/max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_depth </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/lpi/max_depth.png" data-lightbox="content/budget_81/content/lpi/max_depth.png" data-title="content/budget_81/content/lpi/max_depth.png"><img src="content/budget_81/content/lpi/max_depth.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_gain_to_split </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_81/content/lpi/min_gain_to_split.png" data-lightbox="content/budget_81/content/lpi/min_gain_to_split.png" data-title="content/budget_81/content/lpi/min_gain_to_split.png"><img src="content/budget_81/content/lpi/min_gain_to_split.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div>
+</div>
+<div id="Local Parameter Importance (LPI)budget 243" class="tabcontent">
+<div class="pane">
+<div class="accordion">min_data_in_leaf </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/lpi/min_data_in_leaf.png" data-lightbox="content/budget_243/content/lpi/min_data_in_leaf.png" data-title="content/budget_243/content/lpi/min_data_in_leaf.png"><img src="content/budget_243/content/lpi/min_data_in_leaf.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_freq </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/lpi/bagging_freq.png" data-lightbox="content/budget_243/content/lpi/bagging_freq.png" data-title="content/budget_243/content/lpi/bagging_freq.png"><img src="content/budget_243/content/lpi/bagging_freq.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">min_gain_to_split </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/lpi/min_gain_to_split.png" data-lightbox="content/budget_243/content/lpi/min_gain_to_split.png" data-title="content/budget_243/content/lpi/min_gain_to_split.png"><img src="content/budget_243/content/lpi/min_gain_to_split.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">bagging_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/lpi/bagging_fraction.png" data-lightbox="content/budget_243/content/lpi/bagging_fraction.png" data-title="content/budget_243/content/lpi/bagging_fraction.png"><img src="content/budget_243/content/lpi/bagging_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">feature_fraction </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/lpi/feature_fraction.png" data-lightbox="content/budget_243/content/lpi/feature_fraction.png" data-title="content/budget_243/content/lpi/feature_fraction.png"><img src="content/budget_243/content/lpi/feature_fraction.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l1 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/lpi/lambda_l1.png" data-lightbox="content/budget_243/content/lpi/lambda_l1.png" data-title="content/budget_243/content/lpi/lambda_l1.png"><img src="content/budget_243/content/lpi/lambda_l1.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">lambda_l2 </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/lpi/lambda_l2.png" data-lightbox="content/budget_243/content/lpi/lambda_l2.png" data-title="content/budget_243/content/lpi/lambda_l2.png"><img src="content/budget_243/content/lpi/lambda_l2.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_bin </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/lpi/max_bin.png" data-lightbox="content/budget_243/content/lpi/max_bin.png" data-title="content/budget_243/content/lpi/max_bin.png"><img src="content/budget_243/content/lpi/max_bin.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">max_depth </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/lpi/max_depth.png" data-lightbox="content/budget_243/content/lpi/max_depth.png" data-title="content/budget_243/content/lpi/max_depth.png"><img src="content/budget_243/content/lpi/max_depth.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div><div class="accordion">num_leaves </div>
+<div class="panel">
+<div align="center">
+<a href="content/budget_243/content/lpi/num_leaves.png" data-lightbox="content/budget_243/content/lpi/num_leaves.png" data-title="content/budget_243/content/lpi/num_leaves.png"><img src="content/budget_243/content/lpi/num_leaves.png" alt="Plot missing - is phantomjs installed? Check CAVEs FAQ for infos." width="600px"></a>
+</div>
+</div></div>
+</div>
+<script> 
+// Get the element with id="defaultOpen182" and click on it 
+document.getElementById("defaultOpen182").click(); 
+</script> 
+</div></div>
+</div>
+<footer>
+    <div class='l-wrapper'>
+        Generated by <a href="https://github.com/automl/CAVE">CAVE v1.1.6</a> and developed by
+        <a href="http://www.automl.org">autoML</a> | Optimized for Chrome and Firefox
+    </div>
+</footer>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+<script src="html/js/back-to-top.js"></script>
+</body>
+</html>

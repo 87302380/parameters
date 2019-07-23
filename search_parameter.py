@@ -81,8 +81,13 @@ def get_parameters(data, target_feature_index):
 	# Here we simply print out the best config and some statistics about the performed runs.
 	id2config = res.get_id2config_mapping()
 	incumbent = res.get_incumbent_id()
+	info = res.get_runs_by_id(incumbent)
+
+	parameter = id2config[incumbent]['config']
+	min_error = info[0]['loss']
+	feature_importance_dict = info[0]['info']
 
 	with open(os.path.join(args.shared_directory, 'results.pkl'), 'wb') as fh:
 		pickle.dump(res, fh)
 
-	return id2config[incumbent]['config']
+	return parameter, min_error, feature_importance_dict
