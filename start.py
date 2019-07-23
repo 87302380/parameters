@@ -13,7 +13,7 @@ from hpbandster.optimizers import BOHB as BOHB
 from LightGBMWorker import LightGBMWorker as worker
 
 def get_parameters(data, target_feature_index):
-	parser = argparse.ArgumentParser(description='Example 1 - sequential and local execution.')
+        parser = argparse.ArgumentParser(description='Example 1 - sequential and local execution.')
 	parser.add_argument('--min_budget',   type=float, help='Minimum budget used during the optimization.',    default=9)
 	parser.add_argument('--max_budget',   type=float, help='Maximum budget used during the optimization.',    default=243)
 	parser.add_argument('--n_iterations', type=int,   help='Number of iterations performed by the optimizer', default=10)
@@ -78,15 +78,15 @@ def get_parameters(data, target_feature_index):
 	# It holds informations about the optimization run like the incumbent (=best) configuration.
 	# For further details about the Result object, see its documentation.
 	# Here we simply print out the best config and some statistics about the performed runs.
-    id2config = res.get_id2config_mapping()
-    incumbent = res.get_incumbent_id()
-    info = res.get_runs_by_id(incumbent)
+        id2config = res.get_id2config_mapping()
+        incumbent = res.get_incumbent_id()
+        info = res.get_runs_by_id(incumbent)
 
-    parameter = id2config[incumbent]['config']
-    min_error = info[0]['loss']
-    feature_importance_dict = info[0]['info']
+        parameter = id2config[incumbent]['config']
+        min_error = info[0]['loss']
+        feature_importance_dict = info[0]['info']
 
 	with open(os.path.join(args.shared_directory, 'results.pkl'), 'wb') as fh:
 		pickle.dump(res, fh)
 
-    return parameter, min_error, feature_importance_dict
+        return parameter, min_error, feature_importance_dict
