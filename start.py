@@ -11,22 +11,19 @@ import hpbandster.core.nameserver as hpns
 import hpbandster.core.result as hpres
 
 from hpbandster.optimizers import BOHB as BOHB
-from LightGBMWorker import LightGBMWorker as worker
+import LightGBMWorker as worker
 
 
 def get_parameters(data, target_feature_index):
     parser = argparse.ArgumentParser(description='Example 1 - sequential and local execution.')
     parser.add_argument('--min_budget', type=float, help='Minimum budget used during the optimization.', default=9)
     parser.add_argument('--max_budget', type=float, help='Maximum budget used during the optimization.', default=243)
-    parser.add_argument('--n_iterations', type=int, help='Number of iterations performed by the optimizer', default=10)
+    parser.add_argument('--n_iterations', type=int, help='Number of iterations performed by the optimizer', default=4)
     parser.add_argument('--n_workers', type=int, help='Number of workers to run in parallel.', default=2)
     parser.add_argument('--worker', help='Flag to turn this into a worker process', action='store_true')
-    parser.add_argument('--run_id', type=str,
-                        help='A unique run id for this optimization run. An easy option is to use the job id of the clusters scheduler.')
+    parser.add_argument('--run_id', type=str, help='A unique run id for this optimization run. An easy option is to use the job id of the clusters scheduler.')
     parser.add_argument('--nic_name', type=str, help='Which network interface to use for communication.', default='lo')
-    parser.add_argument('--shared_directory', type=str,
-                        help='A directory that is accessible for all processes, e.g. a NFS share.',
-                        default='/home/lchen/parameters/result')
+    parser.add_argument('--shared_directory', type=str,help='A directory that is accessible for all processes, e.g. a NFS share.', default='/home/lchen/parameters/result')
 
     args = parser.parse_args()
 
@@ -46,17 +43,18 @@ def get_parameters(data, target_feature_index):
     # permanent address, but here it will be started for the local machine with the default port.
     # The nameserver manages the concurrent running workers across all possible threads or clusternodes.
     # Note the run_id argument. This uniquely identifies a run of any HpBandSter optimizer.
-    NS = hpns.NameServer(run_id=args.run_id, host=host, port=0, working_directory=args.shared_directory)
+    NS = hpns.NameServer(run_id='test1', host=host, port=0, working_directory=args.shared_directory)
     ns_host, ns_port = NS.start()
-
     # Step 2: Start a worker
     # Now we can instantiate a worker, providing the mandatory information
     # Besides the sleep_interval, we need to define the nameserver information and
     # the same run_id as above. After that, we can start the worker in the background,
     # where it will wait for incoming configurations to evaluate.
-    w = worker(data, target_feature_index, run_id=args.run_id, host=host, nameserver=ns_host, nameserver_port=ns_port)
-    w.run(background=True)
 
+    w = worker(data, target_feature_index, run_id='test1', host=host, nameserver=ns_host, nameserver_port=ns_port)
+    print("daozhele3")
+    w.run(background=True)
+    print("daozhele4")
     # Step 3: Run an optimizer
     # Now we can create an optimizer object and start the run.
     # Here, we run BOHB, but that is not essential.
@@ -69,9 +67,9 @@ def get_parameters(data, target_feature_index):
                 result_logger=result_logger,
                 min_budget=args.min_budget, max_budget=args.max_budget
                 )
-
+    print("daozhele5")
     res = bohb.run(n_iterations=args.n_iterations)
-
+    print("daozhele6")
     bohb.shutdown(shutdown_workers=True)
     NS.shutdown()
 
