@@ -11,7 +11,7 @@ import hpbandster.core.nameserver as hpns
 import hpbandster.core.result as hpres
 
 from hpbandster.optimizers import BOHB as BOHB
-import LightGBMWorker as worker
+from LightGBMWorker import LightGBMWorker as worker
 
 
 def get_parameters(data, target_feature_index):
@@ -31,7 +31,7 @@ def get_parameters(data, target_feature_index):
 
     if args.worker:
         time.sleep(5)  # short artificial delay to make sure the nameserver is already running
-        w = worker(data, target_feature_index, run_id=args.run_id, host=host)
+        w = worker(0.5, data, target_feature_index, run_id=args.run_id, host=host)
         w.load_nameserver_credentials(working_directory=args.shared_directory)
         w.run(background=False)
         exit(0)
@@ -51,10 +51,8 @@ def get_parameters(data, target_feature_index):
     # the same run_id as above. After that, we can start the worker in the background,
     # where it will wait for incoming configurations to evaluate.
 
-    w = worker(data, target_feature_index, run_id='test1', host=host, nameserver=ns_host, nameserver_port=ns_port)
-    print("daozhele3")
+    w = worker(0.5, data, target_feature_index, run_id='test1', host=host, nameserver=ns_host, nameserver_port=ns_port)
     w.run(background=True)
-    print("daozhele4")
     # Step 3: Run an optimizer
     # Now we can create an optimizer object and start the run.
     # Here, we run BOHB, but that is not essential.
